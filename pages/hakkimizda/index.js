@@ -17,7 +17,11 @@ const About = () => {
           </p>
         </div>
         <div className='image-area'>
-          <Image src='/images/about-side.webp' layout='fill' />
+          <Image
+            src='/images/about-side.webp'
+            layout='fill'
+            alt='ice-digital-about'
+          />
         </div>
       </Wrapper>
     </>
