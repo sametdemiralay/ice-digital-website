@@ -1,6 +1,6 @@
-import Title from "../../components/Title";
+import Title from "../components/Title";
 import Image from "next/image";
-import { Wrapper } from "./styles";
+import { Wrapper } from "../styles/hakkimizda";
 
 const About = () => {
   return (
