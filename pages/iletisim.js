@@ -50,13 +50,16 @@ const Contact = () => {
           <span>Sizinle çalışmak için heyecanlıyız !</span>
 
           <form onSubmit={sendEmail} ref={form}>
-            <label>Name</label>
-            <input type='text' name='user_name' placeholder='Email' />
+            <label>İsim</label>
+            <input type='text' name='user_name' required />
+
             <label>Email</label>
-            <input type='email' name='user_email' placeholder='Email' />
-            <textarea name='user_message' />
+            <input type='email' name='user_email' required />
+
+            <label>Mesaj</label>
+            <textarea name='user_message' required />
             {/* <button type='submit'>Subscribe</button> */}
-            <input type='submit' value='Send' />
+            <input type='submit' value='Gönder' />
           </form>
         </div>
       </Container>

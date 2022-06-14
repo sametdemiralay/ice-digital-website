@@ -40,7 +40,7 @@ const Navbar = () => {
   return (
     <Nav scroll={scrollPosition}>
       <Link href='/'>
-        <a className='logo'>ICE DIGITAL</a>
+        <a className='logo'></a>
       </Link>
       <div className='nav-container'>
         {navData.map((link) => (

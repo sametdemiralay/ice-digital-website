@@ -31,36 +31,58 @@ export const Container = styled.div`
 
     form {
       display: flex;
-      align-items: flex-end;
+      align-items: flex-start;
       justify-content: space-between;
+      flex-direction: column;
       position: relative;
-      margin-top: 5rem;
+      margin-top: 4rem;
     }
 
     label {
-      position: absolute;
-      top: 0;
+      position: relative;
+      font-size: 0.75rem;
+      opacity: 0.7;
+      padding-bottom: 0.2rem;
       color: ${({ theme }) => theme.colors.darker};
     }
 
     input {
       background: transparent;
       border: none;
-      border-bottom: 0.1rem solid rgba(255, 255, 255, 0.5);
-      width: 100%;
-      margin-right: 1rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+      width: -webkit-fill-available;
+      /* margin-right: 1rem; */
+      margin-bottom: 1rem;
+    }
+    input[type="submit"] {
+      background: ${({ theme }) => theme.colors.dark};
+      border: none;
+      color: ${({ theme }) => theme.colors.white};
+      padding: 0.5rem;
+      font-size: 1.2rem;
+      cursor: pointer;
     }
     input:focus-visible {
       outline: none;
       border-bottom: 0.1rem solid ${({ theme }) => theme.colors.darker};
     }
 
-    button {
+    textarea {
+      width: -webkit-fill-available;
+      height: 5rem;
+      margin-bottom: 2rem;
+      padding: 0.5rem;
+    }
+    textarea:focus-visible {
+      outline: none;
+    }
+
+    /* button {
       background: ${({ theme }) => theme.colors.dark};
       color: ${({ theme }) => theme.colors.white};
       padding: 0.8rem 1.5rem;
       font-size: 1rem;
       border: none;
-    }
+    } */
   }
 `;

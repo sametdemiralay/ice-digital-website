@@ -14,8 +14,13 @@ export const Nav = styled.nav`
   z-index: 9;
 
   .logo {
-    background: yellow;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 6rem;
+    height: 2rem;
     margin-left: 4rem;
+    background-image: url(images/logo.png);
   }
 
   .nav-container {
